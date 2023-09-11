@@ -2,6 +2,7 @@ import * as React from "react";
 import "./LeftComponent.css";
 import CreatePostBar from "./CreatePostBar/CreatePostBar";
 import SortingBar from "./SortingBar/SortingBar";
+import Post from "./Post/Post";
 
 export default function LeftComponent() {
   return (
@@ -10,6 +11,7 @@ export default function LeftComponent() {
       <div>
         <SortingBar />
       </div>
+      <Post />
     </div>
   );
 }

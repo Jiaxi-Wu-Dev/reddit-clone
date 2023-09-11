@@ -9,6 +9,11 @@
   justify-content: flex-start;
 }
 
+#viewAgendaIcon {
+  display: flex;
+  justify-content: flex-end;
+}
+
 #best {
   margin-left: 5px;
 }

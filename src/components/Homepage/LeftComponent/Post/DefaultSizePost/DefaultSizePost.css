@@ -1,0 +1,13 @@
+#mainComponent {
+  position: relative;
+  left: 40px;
+}
+
+#DefaultSizePostTopBar {
+  display: flex;
+  justify-content: center;
+  width: 582;
+  height: 21.3;
+  background-color: aqua;
+  margin: 8px;
+}

@@ -15,6 +15,9 @@ import BrightnessLowIcon from "@mui/icons-material/BrightnessLow";
 import BarChartIcon from "@mui/icons-material/BarChart";
 import "./SortingBar.css";
 import { Typography } from "@mui/material";
+import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
+import ViewAgendaIcon from "@mui/icons-material/ViewAgenda";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 export default function SortingBar() {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -163,7 +166,30 @@ export default function SortingBar() {
               <BarChartIcon />
               <Typography id="top">Top</Typography>
             </IconButton>
+            <IconButton
+              size="large"
+              aria-label="show more"
+              aria-controls={mobileMenuId}
+              aria-haspopup="true"
+              onClick={handleMobileMenuOpen}
+              color="inherit"
+            >
+              <MoreHorizIcon />
+            </IconButton>
           </Box>
+          <Box sx={{ flexGrow: 1 }} />
+          <IconButton
+            size="large"
+            aria-label="show more"
+            aria-controls={mobileMenuId}
+            aria-haspopup="true"
+            onClick={handleMobileMenuOpen}
+            color="inherit"
+            id="viewAgendaIcon"
+          >
+            <ViewAgendaIcon />
+            <KeyboardArrowDownIcon />
+          </IconButton>
         </Toolbar>
       </AppBar>
       {renderMobileMenu}
