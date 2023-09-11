@@ -1,5 +1,12 @@
 #sortingBar {
   margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#toolbar {
+  display: flex;
+  justify-content: flex-start;
 }
 
 #best {

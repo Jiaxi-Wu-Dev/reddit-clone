@@ -1,17 +1,14 @@
 import * as React from "react";
-import { styled, alpha } from "@mui/material/styles";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
-import InputBase from "@mui/material/InputBase";
 import Badge from "@mui/material/Badge";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import MailIcon from "@mui/icons-material/Mail";
 import NotificationsIcon from "@mui/icons-material/Notifications";
-import MoreIcon from "@mui/icons-material/MoreVert";
 import RocketIcon from "@mui/icons-material/Rocket";
 import LocalFireDepartmentIcon from "@mui/icons-material/LocalFireDepartment";
 import BrightnessLowIcon from "@mui/icons-material/BrightnessLow";
@@ -119,10 +116,9 @@ export default function SortingBar() {
   );
 
   return (
-    <Box sx={{ flexGrow: 1 }} id="sortingBar">
-      <AppBar position="static">
-        <Toolbar>
-          <Box sx={{ flexGrow: 1 }} />
+    <Box sx={{ flexGrow: 1 }}>
+      <AppBar position="static" id="sortingBar">
+        <Toolbar id="toolbar">
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
             <IconButton
               size="large"
