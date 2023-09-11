@@ -1,0 +1,9 @@
+@media (min-width: 960px) {
+  #leftComponent {
+    width: 640px;
+  }
+}
+
+#leftComponent {
+  border-style: dotted;
+}
