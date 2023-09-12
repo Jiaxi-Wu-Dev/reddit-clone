@@ -5,9 +5,15 @@
 
 #DefaultSizePostTopBar {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   width: 582;
   height: 21.3;
   background-color: aqua;
   margin: 8px;
+}
+
+#DefaultSizePostTopBarDetails {
+  display: flex;
+
+  flex-direction: row;
 }

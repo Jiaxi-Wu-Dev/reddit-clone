@@ -2,6 +2,7 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import "./DefaultSizePost.css";
 import SailingIcon from "@mui/icons-material/Sailing";
+import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 
 export default function BoxSx() {
   return (
@@ -31,8 +32,22 @@ export default function BoxSx() {
         id="mainComponent"
       >
         <div id="DefaultSizePostTopBar">
-          <SailingIcon fontSize="small" />
-          r/Aquariums
+          <div id="sailingIcon">
+            {" "}
+            <SailingIcon fontSize="small" />
+          </div>
+          <div id="DefaultSizePostTopBarDetails">
+            <div>r/Aquariums</div>
+            <div>
+              <span>Posted by</span>
+            </div>
+            <div>
+              <div>
+                <a>u/Goofyboi</a>
+              </div>
+            </div>
+            <span>3 hours ago </span>
+          </div>
         </div>
       </Box>
     </Box>
