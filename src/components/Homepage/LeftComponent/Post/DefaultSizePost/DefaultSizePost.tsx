@@ -37,16 +37,53 @@ export default function BoxSx() {
             <SailingIcon fontSize="small" />
           </div>
           <div id="DefaultSizePostTopBarDetails">
-            <div>r/Aquariums</div>
-            <div>
+            <div className="TopBarDetails">r/Aquariums</div>
+            <div className="TopBarDetails">
               <span>Posted by</span>
             </div>
-            <div>
+            <div className="TopBarDetails">
               <div>
                 <a>u/Goofyboi</a>
               </div>
             </div>
-            <span>3 hours ago </span>
+            <span className="TopBarDetails">3 hours ago </span>
+          </div>
+        </div>
+        <div id="DefaultSizePostTitle">
+          <div>
+            <a>
+              <div>
+                <h3 id="title">Help with growing greener aquarium plants!</h3>
+              </div>
+            </a>
+          </div>
+          <div id="tag">
+            <div>
+              <a>
+                <div>
+                  <span>Help/Advice</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <div>
+              <div>
+                <a>
+                  <div>
+                    <div id="pictureBox">
+                      <img
+                        id="picture"
+                        alt="Post Picture"
+                        src="https://preview.redd.it/fkj5mv8uwonb1.jpg?width=640&crop=smart&auto=webp&s=97a166585e4fab6f4d47495c6d8051447450db4b"
+                      ></img>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </Box>
