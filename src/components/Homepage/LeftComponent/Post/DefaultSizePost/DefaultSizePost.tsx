@@ -20,8 +20,8 @@ export default function BoxSx() {
     >
       <Box
         sx={{
-          width: 600,
-          height: 665,
+          width: 640,
+          height: 620,
           marginTop: "20px",
           backgroundColor: "red",
           "&:hover": {
@@ -67,7 +67,7 @@ export default function BoxSx() {
             </div>
           </div>
         </div>
-        <div>
+        <div id="contentBox">
           <div>
             <div>
               <div>
