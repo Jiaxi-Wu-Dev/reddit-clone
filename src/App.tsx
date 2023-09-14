@@ -1,5 +1,5 @@
 import { useState } from "react";
-import SearchNavAppBar from "./components/Appbar/SearchNavAppBar";
+import SearchNavAppBar from "./components/Appbar/SearchNavAppBar/SearchNavAppBar";
 import "./App.css";
 import Homepage from "./components/Homepage/Homepage";
 

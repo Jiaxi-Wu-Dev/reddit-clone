@@ -4,12 +4,11 @@ import "./DefaultSizePost.css";
 import SailingIcon from "@mui/icons-material/Sailing";
 import IconButton from "@mui/material/IconButton";
 import Badge from "@mui/material/Badge";
-import RocketIcon from "@mui/icons-material/Rocket";
-import LocalFireDepartmentIcon from "@mui/icons-material/LocalFireDepartment";
-import BrightnessLowIcon from "@mui/icons-material/BrightnessLow";
-import BarChartIcon from "@mui/icons-material/BarChart";
 import { Typography } from "@mui/material";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
+import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
+import ShortcutIcon from "@mui/icons-material/Shortcut";
+import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
 
 export default function BoxSx() {
   return (
@@ -93,8 +92,8 @@ export default function BoxSx() {
               color="inherit"
             >
               <Badge color="error">
-                <RocketIcon />
-                <Typography id="best">Best</Typography>
+                <ChatBubbleOutlineIcon />
+                <Typography id="comments">Comments</Typography>
               </Badge>
             </IconButton>
             <IconButton
@@ -103,8 +102,8 @@ export default function BoxSx() {
               color="inherit"
             >
               <Badge color="error">
-                <LocalFireDepartmentIcon />
-                <Typography id="hot">Hot</Typography>
+                <ShortcutIcon />
+                <Typography id="share">share</Typography>
               </Badge>
             </IconButton>
             <IconButton
@@ -114,18 +113,10 @@ export default function BoxSx() {
               aria-haspopup="true"
               color="inherit"
             >
-              <BrightnessLowIcon />
-              <Typography id="new">New</Typography>
+              <BookmarkBorderIcon />
+              <Typography id="save">Save</Typography>
             </IconButton>
-            <IconButton
-              size="large"
-              aria-label="show more"
-              aria-haspopup="true"
-              color="inherit"
-            >
-              <BarChartIcon />
-              <Typography id="top">Top</Typography>
-            </IconButton>
+
             <IconButton
               size="large"
               aria-label="show more"
