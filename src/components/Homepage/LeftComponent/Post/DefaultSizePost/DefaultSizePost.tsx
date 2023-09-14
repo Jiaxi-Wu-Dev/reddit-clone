@@ -2,7 +2,14 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import "./DefaultSizePost.css";
 import SailingIcon from "@mui/icons-material/Sailing";
-import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
+import IconButton from "@mui/material/IconButton";
+import Badge from "@mui/material/Badge";
+import RocketIcon from "@mui/icons-material/Rocket";
+import LocalFireDepartmentIcon from "@mui/icons-material/LocalFireDepartment";
+import BrightnessLowIcon from "@mui/icons-material/BrightnessLow";
+import BarChartIcon from "@mui/icons-material/BarChart";
+import { Typography } from "@mui/material";
+import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 
 export default function BoxSx() {
   return (
@@ -12,10 +19,6 @@ export default function BoxSx() {
         height: 665,
         marginTop: "20px",
         backgroundColor: "grey",
-        "&:hover": {
-          backgroundColor: "grey",
-          opacity: [0.9, 0.8, 0.7],
-        },
       }}
     >
       <Box
@@ -24,10 +27,6 @@ export default function BoxSx() {
           height: 620,
           marginTop: "20px",
           backgroundColor: "red",
-          "&:hover": {
-            backgroundColor: "red",
-            opacity: [0.9, 0.8, 0.7],
-          },
         }}
         id="mainComponent"
       >
@@ -85,6 +84,58 @@ export default function BoxSx() {
               </div>
             </div>
           </div>
+        </div>
+        <div id="defaultSizePostBottomBar">
+          <Box sx={{ display: { xs: "none", md: "flex" } }}>
+            <IconButton
+              size="large"
+              aria-label="show 4 new mails"
+              color="inherit"
+            >
+              <Badge color="error">
+                <RocketIcon />
+                <Typography id="best">Best</Typography>
+              </Badge>
+            </IconButton>
+            <IconButton
+              size="large"
+              aria-label="show 17 new notifications"
+              color="inherit"
+            >
+              <Badge color="error">
+                <LocalFireDepartmentIcon />
+                <Typography id="hot">Hot</Typography>
+              </Badge>
+            </IconButton>
+            <IconButton
+              size="large"
+              edge="end"
+              aria-label="account of current user"
+              aria-haspopup="true"
+              color="inherit"
+            >
+              <BrightnessLowIcon />
+              <Typography id="new">New</Typography>
+            </IconButton>
+            <IconButton
+              size="large"
+              aria-label="show more"
+              aria-haspopup="true"
+              color="inherit"
+            >
+              <BarChartIcon />
+              <Typography id="top">Top</Typography>
+            </IconButton>
+            <IconButton
+              size="large"
+              aria-label="show more"
+              aria-haspopup="true"
+              color="inherit"
+            >
+              <MoreHorizIcon />
+            </IconButton>
+          </Box>
+          <Box sx={{ flexGrow: 1 }} />
         </div>
       </Box>
     </Box>

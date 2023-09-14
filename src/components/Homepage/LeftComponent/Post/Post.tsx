@@ -9,10 +9,6 @@ export default function Post() {
         width: 640,
         height: 1500,
         backgroundColor: "primary.dark",
-        "&:hover": {
-          backgroundColor: "primary.main",
-          opacity: [0.9, 0.8, 0.7],
-        },
       }}
     >
       <DefaultSizePost />
