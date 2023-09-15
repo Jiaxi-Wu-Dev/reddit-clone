@@ -4,3 +4,41 @@
   height: 281px;
   margin-top: 16px;
 }
+
+#createPostComponentBackgroundImg {
+  background-image: url(https://www.redditstatic.com/desktop2x/img/id-cards/banner@2x.png);
+
+  background-size: cover;
+
+  height: 34px;
+
+  width: 100%;
+}
+
+#createPostComponentSubreddit {
+  margin-top: -23px;
+  padding: 0 12px 0 12px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+#createPostComponentSnoo {
+  background: url("https://www.redditstatic.com/desktop2x/img/id-cards/snoo-home@2x.png");
+  background-size: 40px 68px;
+  height: 68px;
+  width: 40px;
+}
+
+#createPostComponentTextSection {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+#createPostComponentText {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  display: inline-block;
+  color: white;
+}

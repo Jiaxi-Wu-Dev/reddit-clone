@@ -1,11 +1,6 @@
-import * as React from "react";
 import "./PremiumComponent.css";
-
-import IconButton from "@mui/material/IconButton";
 import Badge from "@mui/material/Badge";
-import { Typography } from "@mui/material";
 import SecurityIcon from "@mui/icons-material/Security";
-import Button from "@mui/material/Button";
 
 export default function PremiumComponent() {
   return (
