@@ -1,10 +1,27 @@
 #recentPostsComponent {
   width: 100%;
   height: 460px;
-  background-color: purple;
+  background-color: #1a1a1b;
   margin-top: 16px;
 }
 
 #recentPostsInnerComponent {
   margin: 12px;
+}
+
+#recentPostsInnerComponentTitle {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#recentPostsPictureText {
+  display: flex;
+  flex-direction: row;
+}
+
+#recentPostsInnerComponentPicture {
+  background-image: url(https://external-preview.redd.it/b2J5bDlnczUwZ29iMT6-HPvxNv0osjPWbVjPlH7SsJRyTdAXePTix77ojw6A.png?width=140&height=140&crop=140:140,smart&format=jpg&v=enabled&lthumb=true&s=59647b00c31be01094478f323f98c06131f70a53);
+  width: 65px;
+  height: 49px;
+  background-size: cover;
 }
