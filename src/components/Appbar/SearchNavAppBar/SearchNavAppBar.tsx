@@ -158,7 +158,7 @@ export default function SearchNavAppBar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar position="static" sx={{ backgroundColor: "#1a1a1b" }}>
         <Toolbar>
           <IconButton
             size="large"

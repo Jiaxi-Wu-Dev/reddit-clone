@@ -4,3 +4,7 @@
   background-color: purple;
   margin-top: 16px;
 }
+
+#recentPostsInnerComponent {
+  margin: 12px;
+}

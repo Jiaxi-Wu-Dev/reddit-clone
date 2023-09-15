@@ -23,7 +23,15 @@ export default function CreatePostComponent() {
             <div id="subRedditDescriptionTextLine">
               part of the conversation.
             </div>
-            <hr id="lineSeperator"></hr>
+          </div>
+        </div>
+        <hr id="lineSeperator" />
+        <div id="createPostComponentButtonGroup">
+          <div id="createPostComponentButtons">
+            <button id="createPostButton">Create Post</button>
+          </div>
+          <div id="createPostComponentButtons">
+            <button id="createCommunityButton">Create Community</button>
           </div>
         </div>
       </div>

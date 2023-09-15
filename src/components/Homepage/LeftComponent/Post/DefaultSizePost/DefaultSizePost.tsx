@@ -17,7 +17,7 @@ export default function BoxSx() {
         width: 640,
         height: 665,
         marginTop: "20px",
-        backgroundColor: "grey",
+        backgroundColor: "#1a1a1b",
       }}
     >
       <Box
@@ -25,14 +25,14 @@ export default function BoxSx() {
           width: 640,
           height: 620,
           marginTop: "20px",
-          backgroundColor: "red",
+          backgroundColor: "#1a1a1b",
         }}
         id="mainComponent"
       >
         <div id="DefaultSizePostTopBar">
           <div id="sailingIcon">
             {" "}
-            <SailingIcon fontSize="small" />
+            <SailingIcon fontSize="small" sx={{ color: "white" }} />
           </div>
           <div id="DefaultSizePostTopBarDetails">
             <div className="TopBarDetails">r/Aquariums</div>

@@ -120,7 +120,7 @@ export default function SortingBar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" id="sortingBar">
+      <AppBar position="static" id="sortingBar" sx={{ bgcolor: "#1a1a1b" }}>
         <Toolbar id="toolbar">
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
             <IconButton

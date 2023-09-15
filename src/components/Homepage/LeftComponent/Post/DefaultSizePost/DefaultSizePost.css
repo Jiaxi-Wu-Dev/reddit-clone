@@ -9,7 +9,7 @@
   flex-direction: row;
   width: 582;
   height: 21.3;
-  background-color: aqua;
+  background-color: #1a1a1b;
   margin: 8px;
 }
 
@@ -22,6 +22,7 @@
 
 .TopBarDetails {
   padding-left: 3px;
+  color: white;
 }
 
 #DefaultSizePostTitle {
@@ -31,6 +32,7 @@
   width: 583px;
   height: 22px;
   margin: 8px;
+  color: white;
 }
 
 #tag {

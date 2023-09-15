@@ -1,5 +1,5 @@
 #premiumComponent {
-  background-color: aqua;
+  background-color: #1a1a1b;
   color: black;
   width: 312px;
   height: 91.5px;
@@ -26,6 +26,7 @@
   margin-bottom: 4px;
   position: flex;
   justify-content: flex-start;
+  color: white;
 }
 
 #innerSectionTopText {
