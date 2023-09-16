@@ -4,6 +4,8 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import "./MenuBar.css";
 import { styled, alpha } from "@mui/material/styles";
+import HomeIcon from "@mui/icons-material/Home";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 const MenuBarStyled = styled("div")(({ theme }) => ({
   position: "relative",
@@ -41,8 +43,13 @@ export default function BasicMenu() {
           aria-haspopup="true"
           aria-expanded={open ? "true" : undefined}
           onClick={handleClick}
+          sx={{ width: "400px" }}
         >
-          Dashboard
+          <div id="homeIconComponent">
+            <HomeIcon id="homeIcon" />
+            Home
+          </div>
+          <ExpandMoreIcon id="expandMoreIcon" />
         </Button>
       </MenuBarStyled>
       <Menu

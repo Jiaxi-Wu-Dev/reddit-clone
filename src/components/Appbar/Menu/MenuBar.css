@@ -1,3 +1,31 @@
 #menuComponent {
   color: white;
 }
+
+#homeIcon {
+  margin-right: 5px;
+}
+
+@media (min-width: 995px) {
+  #basic-button {
+    width: 270px;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #1a1a1b;
+  }
+  #basic-button:hover {
+    border: 1px solid grey;
+  }
+}
+
+#expandMoreIcon {
+  text-align: end;
+  color: white;
+}
+
+#homeIconComponent {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  color: white;
+}

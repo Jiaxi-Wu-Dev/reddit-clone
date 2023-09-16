@@ -10,13 +10,98 @@ export default function RecentPostsComponent() {
             <div id="recentPostsInnerComponentTitle">
               <h2>Recent Posts</h2>
             </div>
-            <div>
-              <div id="recentPostsPictureText">
+            <div id="recentPostsPostComponent">
+              <div id="recentPostsPictureComponent">
                 <div id="recentPostsInnerComponentPicture">
-                  <img></img>
+                  <div>
+                    <img></img>
+                  </div>
                 </div>
-                <div id="recentPostsInnerComponentText">
-                  <p>Dude almost choked to death by barbell</p>
+              </div>
+              <div id="recentPostsTextComponent">
+                <div>
+                  <p id="recentPostsInnerComponentText">
+                    Dude almost choked to death by barbell
+                  </p>
+                  <div>
+                    <div>
+                      <span>1.7k Points</span>
+                      <span>323 comments</span>
+                      <span> 4h </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr id="lineSeperator" />
+            <div id="recentPostsPostComponent">
+              <div id="recentPostsPictureComponent">
+                <div id="recentPostsInnerComponentPicture">
+                  <div>
+                    <img></img>
+                  </div>
+                </div>
+              </div>
+              <div id="recentPostsTextComponent">
+                <div>
+                  <p id="recentPostsInnerComponentText">
+                    Dude almost choked to death by barbell
+                  </p>
+                  <div>
+                    <div>
+                      <span>1.7k Points</span>
+                      <span>323 comments</span>
+                      <span> 4h </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr id="lineSeperator" />
+            <div id="recentPostsPostComponent">
+              <div id="recentPostsPictureComponent">
+                <div id="recentPostsInnerComponentPicture">
+                  <div>
+                    <img></img>
+                  </div>
+                </div>
+              </div>
+              <div id="recentPostsTextComponent">
+                <div>
+                  <p id="recentPostsInnerComponentText">
+                    Dude almost choked to death by barbell
+                  </p>
+                  <div>
+                    <div>
+                      <span>1.7k Points</span>
+                      <span>323 comments</span>
+                      <span> 4h </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr id="lineSeperator" />
+            <div id="recentPostsPostComponent">
+              <div id="recentPostsPictureComponent">
+                <div id="recentPostsInnerComponentPicture">
+                  <div>
+                    <img></img>
+                  </div>
+                </div>
+              </div>
+              <div id="recentPostsTextComponent">
+                <div>
+                  <p id="recentPostsInnerComponentText">
+                    Dude almost choked to death by barbell
+                  </p>
+                  <div>
+                    <div>
+                      <span>1.7k Points</span>
+                      <span>323 comments</span>
+                      <span> 4h </span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
