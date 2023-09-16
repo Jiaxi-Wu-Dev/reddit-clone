@@ -14,8 +14,15 @@ import SearchIcon from "@mui/icons-material/Search";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import MailIcon from "@mui/icons-material/Mail";
 import NotificationsIcon from "@mui/icons-material/Notifications";
-import MoreIcon from "@mui/icons-material/MoreVert";
 import RedditIcon from "@mui/icons-material/Reddit";
+import OutboundOutlinedIcon from "@mui/icons-material/OutboundOutlined";
+import TextsmsOutlinedIcon from "@mui/icons-material/TextsmsOutlined";
+import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
+import AddOutlinedIcon from "@mui/icons-material/AddOutlined";
+import Button from "@mui/material/Button";
+
+import HomeIcon from "@mui/icons-material/Home";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -80,6 +87,11 @@ export default function SearchNavAppBar() {
 
   const handleMobileMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
     setMobileMoreAnchorEl(event.currentTarget);
+  };
+
+  const open = Boolean(anchorEl);
+  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    setAnchorEl(event.currentTarget);
   };
 
   const menuId = "primary-search-account-menu";
@@ -183,17 +195,18 @@ export default function SearchNavAppBar() {
             <StyledInputBase
               placeholder="Search…"
               inputProps={{ "aria-label": "search" }}
+              id="searchInput"
             />
           </Search>
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
             <IconButton
               size="large"
-              aria-label="show 4 new mails"
+              aria-label="show 5 new mails"
               color="inherit"
             >
               <Badge badgeContent={4} color="error">
-                <MailIcon />
+                <OutboundOutlinedIcon />
               </Badge>
             </IconButton>
             <IconButton
@@ -202,7 +215,7 @@ export default function SearchNavAppBar() {
               color="inherit"
             >
               <Badge badgeContent={17} color="error">
-                <NotificationsIcon />
+                <TextsmsOutlinedIcon />
               </Badge>
             </IconButton>
             <IconButton
@@ -214,10 +227,8 @@ export default function SearchNavAppBar() {
               onClick={handleProfileMenuOpen}
               color="inherit"
             >
-              <AccountCircle />
+              <NotificationsNoneOutlinedIcon />
             </IconButton>
-          </Box>
-          <Box sx={{ display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
               aria-label="show more"
@@ -226,8 +237,23 @@ export default function SearchNavAppBar() {
               onClick={handleMobileMenuOpen}
               color="inherit"
             >
-              <MoreIcon />
+              <AddOutlinedIcon />
             </IconButton>
+
+            <Button
+              id="basic-button"
+              aria-controls={open ? "basic-menu" : undefined}
+              aria-haspopup="true"
+              aria-expanded={open ? "true" : undefined}
+              onClick={handleClick}
+              sx={{ width: "400px" }}
+            >
+              <div id="homeIconComponent">
+                <HomeIcon id="homeIcon" />
+                Home
+              </div>
+              <ExpandMoreIcon id="expandMoreIcon" />
+            </Button>
           </Box>
         </Toolbar>
       </AppBar>

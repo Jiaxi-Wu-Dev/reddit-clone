@@ -1,4 +1,10 @@
-.searchBar {
+#searchBar {
   display: center;
   align-items: center;
+  border-radius: 50px;
+  width: 100%;
+}
+
+#searchInput {
+  width: 100%;
 }
