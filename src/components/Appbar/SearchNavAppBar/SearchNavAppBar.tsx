@@ -258,7 +258,7 @@ export default function SearchNavAppBar() {
                       <div id="homeIconComponentInnerInner"></div>
                       <div id="homeIconComponentInnerInnerInner">
                         <img
-                          className="profileSnooPic"
+                          id="profileSnooPic"
                           alt="profile img"
                           width="32px"
                           height="32px"

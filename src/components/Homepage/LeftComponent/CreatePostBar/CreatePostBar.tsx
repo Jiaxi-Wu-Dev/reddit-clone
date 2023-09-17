@@ -31,14 +31,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     padding: theme.spacing(1, 1, 1, 0),
     // vertical padding + font size from searchIcon
     paddingLeft: `calc(1em + ${theme.spacing(4)})`,
-    transition: theme.transitions.create("width"),
     width: "100%",
-    [theme.breakpoints.up("sm")]: {
-      width: "12ch",
-      "&:focus": {
-        width: "20ch",
-      },
-    },
   },
 }));
 
@@ -47,21 +40,25 @@ export default function CreatePostBar() {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" sx={{ bgcolor: "#1a1a1b" }}>
         <Toolbar id="createPostBar">
-          <div id="homeIconComponentInner">
-            <div id="homeIconComponentInnerInner"></div>
-            <div id="homeIconComponentInnerInnerInner">
-              <img
-                className="profileSnooPic"
-                alt="profile img"
-                width="32px"
-                height="32px"
-                src="https://styles.redditmedia.com/t5_dv9zx/styles/profileIcon_snoo-nftv2_bmZ0X2VpcDE1NToxMzdfM2I0NzdhNmIxYmUyMzY2MjhiMDg4MzllMWU4Y2Y4YmE4ZDkzNTg5YV82MzkwMjE5_rare_5b9c5b58-8b0f-4c9c-8cdf-b7c6866acd0a-headshot.png?width=256&height=256&frame=1&auto=webp&crop=256:256,smart&s=3d64fc554f4287ccea4b83862b31cbc114ed07d0"
-              ></img>
+          <a id="iconLink">
+            <div id="iconLinkComponent">
+              <div id="homeIconComponentInner">
+                <div id="homeIconComponentInnerInner"></div>
+                <div id="homeIconComponentInnerInnerInner">
+                  <img
+                    id="createBarSnooIcon"
+                    alt="profile img"
+                    width="32px"
+                    height="32px"
+                    src="https://styles.redditmedia.com/t5_dv9zx/styles/profileIcon_snoo-nftv2_bmZ0X2VpcDE1NToxMzdfM2I0NzdhNmIxYmUyMzY2MjhiMDg4MzllMWU4Y2Y4YmE4ZDkzNTg5YV82MzkwMjE5_rare_5b9c5b58-8b0f-4c9c-8cdf-b7c6866acd0a-headshot.png?width=256&height=256&frame=1&auto=webp&crop=256:256,smart&s=3d64fc554f4287ccea4b83862b31cbc114ed07d0"
+                  ></img>
+                </div>
+              </div>
             </div>
-          </div>
-          <Search>
+          </a>
+          <Search id="createPostText">
             <StyledInputBase
-              placeholder="Search Reddit"
+              placeholder="Create Post"
               inputProps={{ "aria-label": "search" }}
             />
           </Search>

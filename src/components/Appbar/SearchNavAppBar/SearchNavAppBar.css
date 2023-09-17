@@ -42,7 +42,7 @@
   border-radius: 4px;
   float: left;
   max-height: 24px;
-  max-width: 24px;
+  max-width: 345px;
   height: 24px;
   width: 24px;
   position: relative;
@@ -61,7 +61,7 @@
   bottom: 0;
 }
 
-#homeIconComponentInnerInnerInner > img {
+#profileSnooPic {
   width: 100%;
   transform-origin: bottom center;
   display: block;
