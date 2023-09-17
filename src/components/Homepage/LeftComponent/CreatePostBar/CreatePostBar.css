@@ -1,0 +1,4 @@
+#createPostBar {
+  display: flex;
+  justify-content: space-between;
+}

@@ -20,9 +20,9 @@ import TextsmsOutlinedIcon from "@mui/icons-material/TextsmsOutlined";
 import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
 import AddOutlinedIcon from "@mui/icons-material/AddOutlined";
 import Button from "@mui/material/Button";
-
-import HomeIcon from "@mui/icons-material/Home";
+import SettingsIcon from "@mui/icons-material/Settings";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import "./SearchNavAppBar.css";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -170,14 +170,17 @@ export default function SearchNavAppBar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" sx={{ backgroundColor: "#1a1a1b" }}>
+      <AppBar
+        position="static"
+        sx={{ backgroundColor: "#1a1a1b", height: "60px" }}
+      >
         <Toolbar>
           <IconButton
             size="large"
             aria-label="show 4 new mails"
             color="inherit"
           >
-            <RedditIcon />
+            <RedditIcon id="redditIcon" />
           </IconButton>
           <Typography
             variant="h6"
@@ -241,26 +244,39 @@ export default function SearchNavAppBar() {
             </IconButton>
 
             <Button
-              id="basic-button"
+              id="basic-button1"
               aria-controls={open ? "basic-menu" : undefined}
               aria-haspopup="true"
               aria-expanded={open ? "true" : undefined}
               onClick={handleClick}
-              sx={{ width: "400px" }}
+              sx={{ width: "200px" }}
             >
-              <div id="homeIconComponent">
-                <div id="homeIconComponentInner">
-                  <div id="homeIconComponentInnerInner">
-                    <div id="homeIconComponentInnerInnerInner">
-                      <img
-                        id="profileSnooPic"
-                        alt="profile img"
-                        src="https://styles.redditmedia.com/t5_dv9zx/styles/profileIcon_snoo-nftv2_bmZ0X2VpcDE1NToxMzdfM2I0NzdhNmIxYmUyMzY2MjhiMDg4MzllMWU4Y2Y4YmE4ZDkzNTg5YV82MzkwMjE5_rare_5b9c5b58-8b0f-4c9c-8cdf-b7c6866acd0a-headshot.png?width=256&height=256&frame=1&auto=webp&crop=256:256,smart&s=3d64fc554f4287ccea4b83862b31cbc114ed07d0"
-                      ></img>
+              <div id="homeIconComponentSpan">
+                <div id="homeIconComponentInnerspan">
+                  <div id="homeIconComponent">
+                    <div id="homeIconComponentInner">
+                      <div id="homeIconComponentInnerInner"></div>
+                      <div id="homeIconComponentInnerInnerInner">
+                        <img
+                          className="profileSnooPic"
+                          alt="profile img"
+                          width="32px"
+                          height="32px"
+                          src="https://styles.redditmedia.com/t5_dv9zx/styles/profileIcon_snoo-nftv2_bmZ0X2VpcDE1NToxMzdfM2I0NzdhNmIxYmUyMzY2MjhiMDg4MzllMWU4Y2Y4YmE4ZDkzNTg5YV82MzkwMjE5_rare_5b9c5b58-8b0f-4c9c-8cdf-b7c6866acd0a-headshot.png?width=256&height=256&frame=1&auto=webp&crop=256:256,smart&s=3d64fc554f4287ccea4b83862b31cbc114ed07d0"
+                        ></img>
+                      </div>
+                    </div>
+                    <div id="karmaSection">
+                      <div id="userName">LuckyEight</div>
+                      <div id="karma">
+                        <div>
+                          <SettingsIcon id="gear" />
+                        </div>
+                        <div id="karmaText">9.0k Karma</div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                Home
               </div>
               <ExpandMoreIcon id="expandMoreIcon" />
             </Button>
