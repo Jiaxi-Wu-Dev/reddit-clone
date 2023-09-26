@@ -1,4 +1,3 @@
-import React from "react";
 import "./RightComponent.css";
 import PremiumComponent from "./PremiumComponent/PremiumComponent";
 import CreatePostComponent from "./CreatePostComponent/CreatePostComponent";

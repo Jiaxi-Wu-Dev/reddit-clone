@@ -1,4 +1,3 @@
-import React from "react";
 import LeftComponent from "./LeftComponent/LeftComponent";
 import RightComponent from "./RightComponent/RightComponent";
 import "./Homepage.css";

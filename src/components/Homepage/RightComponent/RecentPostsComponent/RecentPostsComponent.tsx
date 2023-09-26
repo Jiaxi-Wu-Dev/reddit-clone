@@ -1,4 +1,3 @@
-import React from "react";
 import "./RecentPostsComponent.css";
 
 export default function RecentPostsComponent() {
