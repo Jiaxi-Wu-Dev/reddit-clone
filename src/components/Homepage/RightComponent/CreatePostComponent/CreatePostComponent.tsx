@@ -1,4 +1,5 @@
 import "./CreatePostComponent.css";
+import CommunityModal from "../CreateCommunityComponent/CommunityModal";
 
 export default function CreatePostComponent() {
   return (
@@ -30,7 +31,7 @@ export default function CreatePostComponent() {
             <button id="createPostButton">Create Post</button>
           </div>
           <div id="createPostComponentButtons">
-            <button id="createCommunityButton">Create Community</button>
+            <CommunityModal />
           </div>
         </div>
       </div>
