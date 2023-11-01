@@ -1,0 +1,38 @@
+.communityRadioButtons {
+  font-size: 0.6rem;
+}
+
+#nsfwCheck {
+  display: flex;
+}
+
+.nsfwText {
+  margin-right: 5px;
+}
+
+#cancelCreateCommunityButtons {
+  display: flex;
+}
+
+#cancelCreateCommunityButtonsContainer {
+  display: flex;
+  justify-content: flex-end;
+  background-color: grey;
+  width: 100%;
+  padding: 12px 32px;
+  margin: 32px -32px -32px;
+}
+
+#greyCancelButton {
+  margin-right: 10px;
+  border-radius: 25px;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+#whiteCreateButton {
+  border-radius: 25px;
+  color: black;
+  background-color: white;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}

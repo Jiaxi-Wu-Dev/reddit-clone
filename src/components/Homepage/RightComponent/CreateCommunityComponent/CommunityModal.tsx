@@ -6,6 +6,7 @@ import TextField from "@mui/material/TextField";
 import Modal from "@mui/material/Modal";
 import "./CommunityModal.css";
 import RadioGroup from "./RadioGroup/RadioGroup";
+import Checkbox from "@mui/material/Checkbox";
 
 const style = {
   position: "absolute" as `absolute`,
@@ -19,6 +20,8 @@ const style = {
   p: 4,
 };
 
+const label = { inputProps: { "aria-label": "Checkbox demo" } };
+
 export default function CommunityModal() {
   const [open, setOpen] = React.useState(false);
   const [subReddit, setSubReddit] = React.useState("");
@@ -28,6 +31,10 @@ export default function CommunityModal() {
 
   const characterLimit = (number: number) => {
     return 21 - number;
+  };
+
+  const createSubReddit = () => {
+    console.log("buttonsWorking");
   };
 
   return (
@@ -77,6 +84,30 @@ export default function CommunityModal() {
           </Box>
 
           <RadioGroup />
+          <Typography>Adult Content</Typography>
+          <div id="nsfwCheck">
+            <Checkbox {...label} />
+            <p className="nsfwText">NSFW</p>
+            <p className="nsfwText">18+ year Old Community</p>
+          </div>
+          <div id="cancelCreateCommunityButtonsContainer">
+            <div id="cancelCreateCommunityButtons">
+              <Button
+                id="greyCancelButton"
+                variant="outlined"
+                onClick={handleClose}
+              >
+                Cancel
+              </Button>
+              <Button
+                id="whiteCreateButton"
+                variant="contained"
+                onClick={createSubReddit}
+              >
+                Create Community
+              </Button>
+            </div>
+          </div>
         </Box>
       </Modal>
     </div>
