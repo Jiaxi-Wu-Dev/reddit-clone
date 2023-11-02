@@ -7,6 +7,7 @@ import Modal from "@mui/material/Modal";
 import "./CommunityModal.css";
 import RadioGroup from "./RadioGroup/RadioGroup";
 import Checkbox from "@mui/material/Checkbox";
+import { useEffect } from "react";
 
 const style = {
   position: "absolute" as `absolute`,
@@ -29,9 +30,11 @@ export default function CommunityModal() {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
-  const characterLimit = (number: number) => {
-    return 21 - number;
-  };
+  useEffect(() => {
+    fetch("http://localhost:3000/")
+      .then((response) => response.json())
+      .then(console.log);
+  }, []);
 
   const createSubReddit = () => {
     console.log("buttonsWorking");
