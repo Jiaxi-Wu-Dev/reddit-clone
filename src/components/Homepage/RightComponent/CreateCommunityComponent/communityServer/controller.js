@@ -15,4 +15,5 @@ const getSubRedditByName = (req, res) => {
     res.status(200).json(results.rows);
   });
 };
+
 export default { getSubReddit, getSubRedditByName };
