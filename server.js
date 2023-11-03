@@ -8,7 +8,7 @@ const database = {
   users: [
     {
       id: "1",
-      name: "Jiaxi",
+      userName: "dartz",
       email: "jiaxi.wu@gmail.com",
       password: "cookies",
       karma: 0,
@@ -16,7 +16,7 @@ const database = {
     },
     {
       id: "2",
-      name: "Gary",
+      userName: "nitro1",
       email: "gary123@gmail.com",
       password: "testing",
       karma: 0,
@@ -33,7 +33,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 app.get("/", (req, res) => {
-  res.send("hello world");
+  res.send(database.users);
 });
 
 app.post("/signin", (req, res) => {
@@ -46,6 +46,20 @@ app.post("/signin", (req, res) => {
     res.status(400).json("error log test");
     console.log(req.body.email);
   }
+});
+
+app.post("/register", (req, res) => {
+  const { email, password, name } = req.body;
+
+  database.users.push({
+    id: "1",
+    userName: name,
+    email: email,
+    password: password,
+    karma: 0,
+    joined: new Date(),
+  });
+  res.json(database.users[database.users.length - 1]);
 });
 
 app.get("/signin", (req, res) => {
