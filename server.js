@@ -3,6 +3,7 @@ import express from "express";
 import bodyParser from "body-parser";
 import subredditRoutes from "./src/components/Homepage/RightComponent/CreateCommunityComponent/communityServer/routes.js";
 import cors from "cors";
+import bcrypt from "bcrypt";
 
 const database = {
   users: [
@@ -31,10 +32,20 @@ const database = {
       joined: new Date(),
     },
   ],
+  login: [
+    {
+      id: "987",
+      hash: "",
+    },
+  ],
 };
 
 const app = express();
 const port = 3000;
+
+const saltRounds = 10;
+const myPlaintextPassword = "s0//P4$$w0rD";
+const someOtherPlaintextPassword = "not_bacon";
 
 app.use(express.json());
 app.use(cors());
@@ -45,6 +56,13 @@ app.get("/", (req, res) => {
 });
 
 app.post("/signin", (req, res) => {
+  bcrypt.compare(myPlaintextPassword, hash, function (err, result) {
+    // result == true
+  });
+  bcrypt.compare(someOtherPlaintextPassword, hash, function (err, result) {
+    // result == false
+  });
+
   if (
     req.body.email === database.users[0].email &&
     req.body.password === database.users[0].password
@@ -58,6 +76,10 @@ app.post("/signin", (req, res) => {
 
 app.post("/register", (req, res) => {
   const { email, password, name } = req.body;
+
+  bcrypt.hash(password, saltRounds, function (err, hash) {
+    console.log(hash);
+  });
 
   database.users.push({
     id: "1",
@@ -76,7 +98,7 @@ app.get("/signin", (req, res) => {
 
 app.get("/profile/:id", (req, res) => {
   const { id } = req.params;
-  let found = false;
+
   database.users.forEach((user) => {
     if (user.id === id) {
       found = true;

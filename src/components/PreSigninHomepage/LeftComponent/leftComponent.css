@@ -1,0 +1,14 @@
+#leftComponent {
+  width: 20%;
+}
+
+.sideBarNavigationButtons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.navigationButtonIcons {
+  padding-right: 10px;
+}

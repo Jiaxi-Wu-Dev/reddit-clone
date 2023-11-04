@@ -1,16 +1,19 @@
 import SearchNavAppBar from "./components/Appbar/SearchNavAppBar/SearchNavAppBar";
 import "./App.css";
 import Homepage from "./components/Homepage/Homepage";
-import "@fontsource/roboto/300.css";
-import "@fontsource/roboto/400.css";
-import "@fontsource/roboto/500.css";
-import "@fontsource/roboto/700.css";
+import { useEffect } from "react";
+import PreSigninHomepage from "./components/PreSigninHomepage/PreSigninHomepage";
 
 function App() {
+  useEffect(() => {
+    fetch("http://localhost:3000/")
+      .then((response) => response.json())
+      .then(console.log);
+  });
+
   return (
     <>
-      <SearchNavAppBar />
-      <Homepage />
+      <PreSigninHomepage />
     </>
   );
 }
