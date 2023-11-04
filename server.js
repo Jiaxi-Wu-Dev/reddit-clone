@@ -15,6 +15,14 @@ const database = {
       joined: new Date(),
     },
     {
+      id: "3",
+      userName: "dartz2",
+      email: "jiaxi.wu@gmail.com",
+      password: "cookies2",
+      karma: 0,
+      joined: new Date(),
+    },
+    {
       id: "2",
       userName: "nitro1",
       email: "gary123@gmail.com",
@@ -64,6 +72,36 @@ app.post("/register", (req, res) => {
 
 app.get("/signin", (req, res) => {
   res.send("signin");
+});
+
+app.get("/profile/:id", (req, res) => {
+  const { id } = req.params;
+  let found = false;
+  database.users.forEach((user) => {
+    if (user.id === id) {
+      found = true;
+      return res.json(user);
+    }
+  });
+  if (!found) {
+    res.status(400).json("not found");
+  }
+});
+
+app.post("/image", (req, res) => {
+  const { id } = req.body;
+  let found = false;
+
+  database.users.forEach((user) => {
+    if (user.id === id) {
+      found = true;
+      user.karma++;
+      return res.json(user.karma);
+    }
+  });
+  if (!found) {
+    res.status(400).json("not found");
+  }
 });
 
 app.use("/subreddits", subredditRoutes);
