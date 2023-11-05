@@ -11,8 +11,19 @@
   border-radius: 25px;
 }
 
+#carouselListContainer {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+
 .carouselList {
   list-style-type: none;
+  display: flex;
+  flex-direction: row;
 }
 
 .carouselLink {
@@ -89,4 +100,13 @@
   z-index: 90;
   display: flex;
   flex-direction: row;
+}
+
+.arrowLeftContainer {
+  display: inline;
+  opacity: 1;
+  top: 85px;
+  right: 8px;
+  position: absolute;
+  visibility: visible;
 }

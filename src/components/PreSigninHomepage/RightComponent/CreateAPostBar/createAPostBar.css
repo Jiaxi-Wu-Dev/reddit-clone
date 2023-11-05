@@ -1,0 +1,37 @@
+#buttonCreatePost {
+  --buttonText: #fff;
+  position: flex;
+  justify-content: center;
+
+  color: white;
+  border-color: grey;
+  width: 113px;
+  height: 40px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 9999px;
+  margin: 7px;
+}
+
+#postCreateText {
+  font-size: 12px;
+  font-weight: 1000;
+}
+
+#menuGroups {
+  display: flex;
+  flex-direction: row;
+}
+
+#createPostBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.individualMenu {
+  border-radius: 25px;
+}
