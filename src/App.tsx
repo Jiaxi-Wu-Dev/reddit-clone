@@ -1,6 +1,4 @@
-import SearchNavAppBar from "./components/Appbar/SearchNavAppBar/SearchNavAppBar";
 import "./App.css";
-import Homepage from "./components/Homepage/Homepage";
 import { useEffect } from "react";
 import PreSigninHomepage from "./components/PreSigninHomepage/PreSigninHomepage";
 
