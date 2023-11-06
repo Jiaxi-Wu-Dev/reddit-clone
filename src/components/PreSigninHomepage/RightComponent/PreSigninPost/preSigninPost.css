@@ -15,6 +15,7 @@
 .imageSubredditAnchor {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 #containedButtons {
@@ -31,6 +32,7 @@
   align-items: center;
   justify-content: space-between;
   margin-left: 15px;
+  margin-bottom: 0;
 }
 
 #joinButton {
@@ -38,6 +40,7 @@
   height: 24px;
   font-size: 12px;
   font-weight: 1000;
+  background-color: #0045ac;
 }
 
 #reportIcon {
@@ -50,4 +53,5 @@
 
 #meIrl {
   color: white;
+  font-size: 12px;
 }

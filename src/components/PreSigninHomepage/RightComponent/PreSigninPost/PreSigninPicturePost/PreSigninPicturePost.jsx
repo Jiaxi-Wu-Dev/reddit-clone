@@ -8,8 +8,10 @@ function PreSigninPicturePost() {
   return (
     <div id="picturePostContainer">
       <PreSigninPost />
-      <Typography id="topPostText">
-        <h3>After Sunset in Nambia's coastal dunes. [OC] (2048x1470)</h3>
+      <Typography>
+        <h3 id="topPostText">
+          After Sunset in Nambia's coastal dunes. [OC] (2048x1470)
+        </h3>
       </Typography>
       <a href="www.reddit.com/r/EarthPorn/comments/17o5n6s/after_sunset_in_namibias_coastal_dunes_oc/">
         <div>
