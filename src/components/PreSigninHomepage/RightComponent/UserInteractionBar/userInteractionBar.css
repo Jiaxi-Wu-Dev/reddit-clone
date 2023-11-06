@@ -1,0 +1,9 @@
+#userInteractionBar {
+  display: flex;
+  flex-direction: row;
+}
+
+#voting {
+  display: flex;
+  flex-direction: row;
+}

@@ -1,0 +1,42 @@
+.imageSubreddit {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-radius: 50px;
+  margin-right: 15px;
+}
+
+.imageSubredditBox {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.imageSubredditAnchor {
+  display: flex;
+  flex-direction: row;
+}
+
+#containedButtons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.subRedditContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#joinButton {
+  border-radius: 50px;
+  height: 24px;
+  font-size: 12px;
+  font-weight: 1000;
+}
+
+#reportIcon {
+  border-radius: 100px;
+}

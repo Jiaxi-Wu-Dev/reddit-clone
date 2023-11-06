@@ -1,0 +1,10 @@
+#demo-customized-button {
+  margin-right: 5px;
+  border-radius: 25px;
+  color: #82959b;
+  border: none;
+}
+
+#demo-customized-button:hover {
+  background-color: #223237;
+}

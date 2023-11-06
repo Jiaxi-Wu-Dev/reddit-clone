@@ -9,6 +9,7 @@ import ArchiveIcon from "@mui/icons-material/Archive";
 import FileCopyIcon from "@mui/icons-material/FileCopy";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import "./hotMenu.css";
 
 const StyledMenu = styled((props) => (
   <Menu
@@ -71,7 +72,7 @@ export default function CustomizedMenus() {
         aria-controls={open ? "demo-customized-menu" : undefined}
         aria-haspopup="true"
         aria-expanded={open ? "true" : undefined}
-        variant="contained"
+        variant="outlined"
         disableElevation
         onClick={handleClick}
         endIcon={<KeyboardArrowDownIcon />}
