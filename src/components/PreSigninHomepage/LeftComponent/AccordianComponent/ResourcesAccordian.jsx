@@ -14,23 +14,32 @@ import BuildOutlinedIcon from "@mui/icons-material/BuildOutlined";
 import NewspaperOutlinedIcon from "@mui/icons-material/NewspaperOutlined";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
-
+import "./resourcesAccordian.css";
 const style = {
   width: "100%",
   maxWidth: 360,
-  bgcolor: "background.paper",
+  bgcolor: "#0b1416",
+  color: "white",
+};
+
+const blackBackgroundStyle = {
+  bgcolor: "#0b1416",
 };
 
 function ResourcesAccordian() {
   return (
     <div>
-      <Accordion disableGutters="false" defaultExpanded="true">
+      <Accordion
+        sx={blackBackgroundStyle}
+        disableGutters="false"
+        defaultExpanded="true"
+      >
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
+          expandIcon={<ExpandMoreIcon id="expandMoreIcon" />}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography>Resources</Typography>
+          <Typography id="resourcesText">Resources</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <List sx={style} component="nav" aria-label="mailbox folders">

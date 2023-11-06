@@ -1,4 +1,5 @@
 #preSigninHomepage {
   display: flex;
   flex-direction: row;
+  background-color: #0b1416;
 }

@@ -43,6 +43,9 @@
   background-color: #0045ac;
 }
 
+#joinButton:hover {
+  background-color: #1870f4;
+}
 #reportIcon {
   border-radius: 100px;
 }

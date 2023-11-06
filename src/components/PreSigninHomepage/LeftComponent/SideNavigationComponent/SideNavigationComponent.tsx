@@ -8,7 +8,13 @@ import ArrowOutwardOutlinedIcon from "@mui/icons-material/ArrowOutwardOutlined";
 const style = {
   width: "100%",
   maxWidth: 360,
-  bgcolor: "background.paper",
+  bgcolor: "#0b1416",
+  color: "white",
+};
+
+const blackBackgroundWhiteTetxtStyle = {
+  bgcolor: "#0b1416",
+  color: "white",
 };
 
 function SideNavigationComponent() {
@@ -19,14 +25,14 @@ function SideNavigationComponent() {
           <ListItem button>
             <div className="sideBarNavigationButtons">
               <HomeOutlinedIcon className="navigationButtonIcons" />{" "}
-              <ListItemText primary="Inbox" />
+              <ListItemText primary="Home" />
             </div>
           </ListItem>
           <Divider />
           <ListItem button divider>
             <div className="sideBarNavigationButtons">
               <ArrowOutwardOutlinedIcon className="navigationButtonIcons" />{" "}
-              <ListItemText primary="Inbox" />
+              <ListItemText primary="Popular" />
             </div>
           </ListItem>
         </List>

@@ -13,6 +13,11 @@
   padding-bottom: 4px;
   border-radius: 9999px;
   margin: 7px;
+  margin-left: 55px;
+}
+
+#buttonCreatePost:hover {
+  background-color: #223237;
 }
 
 #postCreateText {
@@ -30,6 +35,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  width: 75%;
 }
 
 .individualMenu {

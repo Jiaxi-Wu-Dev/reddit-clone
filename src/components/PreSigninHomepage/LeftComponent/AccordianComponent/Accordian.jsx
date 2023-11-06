@@ -11,23 +11,30 @@ import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 const style = {
   width: "100%",
   maxWidth: 360,
-  bgcolor: "background.paper",
+  bgcolor: "#0b1416",
+  color: "white",
+};
+
+const blackBackgroundWhiteTetxtStyle = {
+  bgcolor: "#0b1416",
+  color: "white",
 };
 
 function Accordian() {
   return (
     <div>
-      <Accordion disableGutters="false">
+      <Accordion disableGutters="false" sx={blackBackgroundWhiteTetxtStyle}>
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
+          expandIcon={<ExpandMoreIcon sx={blackBackgroundWhiteTetxtStyle} />}
           aria-controls="panel1a-content"
           id="panel1a-header"
+          sx={blackBackgroundWhiteTetxtStyle}
         >
           <Typography>Recent</Typography>
         </AccordionSummary>
-        <AccordionDetails>
+        <AccordionDetails sx={blackBackgroundWhiteTetxtStyle}>
           <List sx={style} component="nav" aria-label="mailbox folders">
-            <ListItem button>
+            <ListItem button sx={blackBackgroundWhiteTetxtStyle}>
               <div className="sideBarNavigationButtons">
                 <HomeOutlinedIcon className="navigationButtonIcons" />{" "}
                 <ListItemText primary="Inbox" />

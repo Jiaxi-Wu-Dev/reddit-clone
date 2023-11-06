@@ -1,3 +1,7 @@
 #long-button {
   color: white;
 }
+
+#long-button:hover {
+  background-color: #223237;
+}

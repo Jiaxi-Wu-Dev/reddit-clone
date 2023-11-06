@@ -18,15 +18,25 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 const style = {
   width: "100%",
   maxWidth: 360,
-  bgcolor: "background.paper",
+  bgcolor: "#0b1416",
+  color: "white",
+};
+
+const blackBackgroundWhiteTetxtStyle = {
+  bgcolor: "#0b1416",
+  color: "white",
 };
 
 function TopicsAccordian() {
   return (
     <div>
-      <Accordion disableGutters="false" defaultExpanded="true">
+      <Accordion
+        disableGutters="false"
+        defaultExpanded="true"
+        sx={blackBackgroundWhiteTetxtStyle}
+      >
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
+          expandIcon={<ExpandMoreIcon sx={blackBackgroundWhiteTetxtStyle} />}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
