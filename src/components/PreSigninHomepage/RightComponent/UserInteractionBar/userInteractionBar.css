@@ -2,22 +2,35 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
 }
 
 #voting {
   display: flex;
   flex-direction: row;
   align-items: center;
+  text-decoration: none;
 }
 
-.transformRotate {
+.transformRotateUp {
   transform: rotate(-0.25turn);
 }
 
+.transformRotateUp:hover {
+  color: red;
+}
+
+.transformRotateDown {
+  transform: rotate(-0.75turn);
+}
+
+.transformRotateDown:hover {
+  color: blue;
+}
 #comments {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   margin-right: 10px;
 }
 
@@ -35,4 +48,37 @@
 
 #downVoteArrow {
   margin-right: 10px;
+}
+
+#roundedChatComments {
+  border-radius: 25px;
+  font-size: 8px;
+}
+
+#roundedShareText {
+  font-size: 0.8em;
+}
+
+#roundedShare {
+  border-radius: 25px;
+  color: white;
+  border: none;
+}
+
+#roundedCommentsButton {
+  border-radius: 25px;
+  color: white;
+  border: none;
+}
+
+#roundedCommentsText {
+  margin-left: 3px;
+  font-size: 0.8em;
+}
+
+#karmaButton {
+  border-radius: 25px;
+  margin-right: 10px;
+  color: white;
+  border: none;
 }

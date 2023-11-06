@@ -21,6 +21,8 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-top: 15px;
+  margin-right: 15px;
 }
 
 .subRedditContainer {
@@ -28,6 +30,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  margin-left: 15px;
 }
 
 #joinButton {
@@ -39,4 +42,12 @@
 
 #reportIcon {
   border-radius: 100px;
+}
+
+.imageSubredditSpanContainer {
+  margin-top: 15px;
+}
+
+#meIrl {
+  color: white;
 }

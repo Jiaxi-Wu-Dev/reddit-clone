@@ -11,9 +11,11 @@ function RightComponent() {
     <div id="rightComponent">
       <ImageCarousel />
       <CreateAPostBar />
-      <PreSigninPost />
+
       <PreSigninPicturePost />
-      <UserInteractionBar />
+      <PreSigninPicturePost />
+      <PreSigninPicturePost />
+      <PreSigninPicturePost />
     </div>
   );
 }
