@@ -1,9 +1,38 @@
 #userInteractionBar {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 #voting {
   display: flex;
   flex-direction: row;
+  align-items: center;
+}
+
+.transformRotate {
+  transform: rotate(-0.25turn);
+}
+
+#comments {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 10px;
+}
+
+#chatBubble {
+  margin-right: 5px;
+}
+
+.commentsButtons {
+  background-color: white;
+}
+
+.commentsButtons:hover {
+  background-color: #223237;
+}
+
+#downVoteArrow {
+  margin-right: 10px;
 }
