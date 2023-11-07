@@ -20,6 +20,8 @@ function RightComponent() {
         {bigSubRedditPostData.map((e) => (
           <PreSigninPicturePost
             key={e.key}
+            subReddit={e.subReddit}
+            subRedditIcon={e.subRedditIcon}
             title={e.title}
             link={e.link}
             src={e.src}
