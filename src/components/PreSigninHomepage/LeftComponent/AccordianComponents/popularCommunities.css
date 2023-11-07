@@ -1,0 +1,8 @@
+#accordianPopular {
+  border-radius: 25px;
+}
+
+#seeMore {
+  display: flex;
+  flex-direction: row;
+}

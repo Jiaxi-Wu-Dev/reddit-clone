@@ -93,33 +93,6 @@ function TopicsAccordian() {
               </ListItemButton>
             </ListItem>
           </List>
-          {/*  <List sx={style} component="nav" aria-label="mailbox folders">
-            <ListItem button>
-              <div>
-               
-                <div className="sideBarNavigationButtons">
-                  <SportsBaseballOutlinedIcon className="navigationButtonIcons" />{" "}
-                  <ListItemText primary="Sports" />
-                </div>
-                <div className="sideBarNavigationButtons">
-                  <ShowChartOutlinedIcon className="navigationButtonIcons" />{" "}
-                  <ListItemText primary="Business" />
-                </div>
-                <div className="sideBarNavigationButtons">
-                  <CurrencyBitcoinIcon className="navigationButtonIcons" />{" "}
-                  <ListItemText primary="Crypto" />
-                </div>
-                <div className="sideBarNavigationButtons">
-                  <LiveTvIcon className="navigationButtonIcons" />{" "}
-                  <ListItemText primary="Television" />
-                </div>
-                <div className="sideBarNavigationButtons">
-                  <StarPurple500Icon className="navigationButtonIcons" />{" "}
-                  <ListItemText primary="Celebrity" />
-                </div>
-              </div>
-            </ListItem>
-          </List> */}
         </AccordionDetails>
       </Accordion>
     </div>

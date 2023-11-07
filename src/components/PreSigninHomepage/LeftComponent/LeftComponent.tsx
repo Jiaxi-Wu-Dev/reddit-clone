@@ -2,9 +2,9 @@
 
 import "./leftComponent.css";
 import SideNavigationComponent from "./SideNavigationComponent/SideNavigationComponent";
-import Accordian from "./AccordianComponent/Accordian";
-import TopicsAccordian from "./AccordianComponent/TopicsAccordian";
-import ResourcesAccordian from "./AccordianComponent/ResourcesAccordian";
+import Accordian from "./AccordianComponents/Accordian.jsx";
+import TopicsAccordian from "./AccordianComponents/TopicsAccordian";
+import ResourcesAccordian from "./AccordianComponents/ResourcesAccordian";
 
 function LeftComponent() {
   return (

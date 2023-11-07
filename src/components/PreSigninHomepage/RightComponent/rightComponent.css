@@ -1,4 +1,13 @@
 #rightComponent {
-  width: 70%;
+  width: 73.5%;
   background-color: #0b1416;
+  display: relative;
+}
+
+#popularCommunities {
+  position: absolute;
+  top: 305px;
+  left: 1165px;
+  width: 273px;
+  border-radius: 15px;
 }
