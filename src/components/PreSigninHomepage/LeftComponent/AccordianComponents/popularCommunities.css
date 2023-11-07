@@ -6,3 +6,11 @@
   display: flex;
   flex-direction: row;
 }
+
+#popularCommunitiesAccordianSummary {
+  border-radius: 25px;
+}
+
+.borderTest {
+  border-radius: 15px;
+}

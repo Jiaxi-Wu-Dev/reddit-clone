@@ -37,16 +37,21 @@ function Accordian() {
             <ExpandMoreIcon id="seeMore" sx={blackBackgroundWhiteTetxtStyle} />
           }
           aria-controls="panel1a-content"
-          id="panel1a-header"
+          id="popularCommunitiesAccordianSummary"
           sx={blackBackgroundWhiteTetxtStyle}
         >
           <Typography>Popular Communities</Typography>
         </AccordionSummary>
         <AccordionDetails sx={blackBackgroundWhiteTetxtStyle}>
-          <List sx={style} component="nav" aria-label="mailbox folders">
+          <List
+            className="borderTest"
+            sx={style}
+            component="nav"
+            aria-label="mailbox folders"
+          >
             {subRedditData.map((e) => (
               <ListItem sx={blackBackgroundWhiteTetxtStyle}>
-                <div className="sideBarNavigationButtons">
+                <div className="sideBarNavigationButtons borderTest">
                   <PopularCommunitySubReddit
                     key={e.key}
                     className="navigationButtonIcons"

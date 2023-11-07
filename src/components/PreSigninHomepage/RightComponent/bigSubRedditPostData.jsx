@@ -1,15 +1,6 @@
 export const bigSubRedditPostData = [
   {
     key: 1,
-    title: "me trying to get to sleep",
-    subReddit: "r/meIrl",
-    subRedditIcon:
-      "https://b.thumbs.redditmedia.com/4ADRnu2cwKIkpQt0N-g36-iq6EfTNFVV1RComMcEZiU.png",
-    link: "https://www.reddit.com/r/meirl/comments/17oz056/meirl/",
-    src: "https://preview.redd.it/e6kd4ou25pyb1.png?width=640&crop=smart&auto=webp&s=bfe857efaec33002aa459d7fcb31ecbb4b55eef2",
-  },
-  {
-    key: 2,
     title: "First House Done on The Sims",
     subReddit: "r/gaming",
     subRedditIcon:
@@ -17,6 +8,16 @@ export const bigSubRedditPostData = [
     link: "https://www.reddit.com/r/gaming/comments/17op1x4/i_dont_know_if_a_lot_of_people_are_playing_the/",
     src: "https://preview.redd.it/i-dont-know-if-a-lot-of-people-are-playing-the-sims-v0-16cophvy6myb1.jpg?width=640&crop=smart&auto=webp&s=da6651bf516aba05937d39a8d18dbde3759ced97",
   },
+  {
+    key: 2,
+    title: "me trying to get to sleep",
+    subReddit: "r/meIrl",
+    subRedditIcon:
+      "https://b.thumbs.redditmedia.com/4ADRnu2cwKIkpQt0N-g36-iq6EfTNFVV1RComMcEZiU.png",
+    link: "https://www.reddit.com/r/meirl/comments/17oz056/meirl/",
+    src: "https://preview.redd.it/e6kd4ou25pyb1.png?width=640&crop=smart&auto=webp&s=bfe857efaec33002aa459d7fcb31ecbb4b55eef2",
+  },
+
   {
     key: 3,
     title: "Strick Game Master",
