@@ -2,13 +2,13 @@ import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
-import ListItemText from "@mui/material/ListItemText";
-import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import PopularCommunitySubReddit from "../AccordianComponents/PopularCommunity/PopularCommunitySubReddit";
 import "./popularCommunities.css";
+
+import { subRedditData } from "./subRedditData";
 
 const style = {
   width: "100%",
@@ -34,9 +34,7 @@ function Accordian() {
       >
         <AccordionSummary
           expandIcon={
-            <Typography id="seeMore" sx={blackBackgroundWhiteTetxtStyle}>
-              See More
-            </Typography>
+            <ExpandMoreIcon id="seeMore" sx={blackBackgroundWhiteTetxtStyle} />
           }
           aria-controls="panel1a-content"
           id="panel1a-header"
@@ -46,31 +44,19 @@ function Accordian() {
         </AccordionSummary>
         <AccordionDetails sx={blackBackgroundWhiteTetxtStyle}>
           <List sx={style} component="nav" aria-label="mailbox folders">
-            <ListItem sx={blackBackgroundWhiteTetxtStyle}>
-              <div className="sideBarNavigationButtons">
-                <PopularCommunitySubReddit className="navigationButtonIcons" />{" "}
-              </div>
-            </ListItem>
-            <ListItem sx={blackBackgroundWhiteTetxtStyle}>
-              <div className="sideBarNavigationButtons">
-                <PopularCommunitySubReddit className="navigationButtonIcons" />{" "}
-              </div>
-            </ListItem>
-            <ListItem sx={blackBackgroundWhiteTetxtStyle}>
-              <div className="sideBarNavigationButtons">
-                <PopularCommunitySubReddit className="navigationButtonIcons" />{" "}
-              </div>
-            </ListItem>
-            <ListItem sx={blackBackgroundWhiteTetxtStyle}>
-              <div className="sideBarNavigationButtons">
-                <PopularCommunitySubReddit className="navigationButtonIcons" />{" "}
-              </div>
-            </ListItem>
-            <ListItem sx={blackBackgroundWhiteTetxtStyle}>
-              <div className="sideBarNavigationButtons">
-                <PopularCommunitySubReddit className="navigationButtonIcons" />{" "}
-              </div>
-            </ListItem>
+            {subRedditData.map((e) => (
+              <ListItem sx={blackBackgroundWhiteTetxtStyle}>
+                <div className="sideBarNavigationButtons">
+                  <PopularCommunitySubReddit
+                    key={e.key}
+                    className="navigationButtonIcons"
+                    subRedditName={e.subRedditName}
+                    members={e.members}
+                    src={e.src}
+                  />
+                </div>
+              </ListItem>
+            ))}
           </List>
         </AccordionDetails>
       </Accordion>
