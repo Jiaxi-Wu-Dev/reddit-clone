@@ -173,17 +173,18 @@ export default function SearchNavAppBar() {
           >
             readdit
           </Typography>
-
-          <Search id="preSigninHomePageSearchBar">
-            <SearchIconWrapper>
-              <SearchIcon />
-            </SearchIconWrapper>
-            <StyledInputBase
-              placeholder="Search…"
-              inputProps={{ "aria-label": "search" }}
-              id="searchInput"
-            />
-          </Search>
+          <div id="preSigninHomePageSearchBarContainer">
+            <Search id="preSigninHomePageSearchBar">
+              <SearchIconWrapper>
+                <SearchIcon />
+              </SearchIconWrapper>
+              <StyledInputBase
+                placeholder="Search…"
+                inputProps={{ "aria-label": "search" }}
+                id="searchInput"
+              />
+            </Search>
+          </div>
         </Toolbar>
       </AppBar>
       {renderMobileMenu}
