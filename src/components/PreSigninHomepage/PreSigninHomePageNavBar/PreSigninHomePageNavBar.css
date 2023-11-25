@@ -148,13 +148,50 @@
 }
 
 #preSigninHomePageSearchBar {
-  background-color: #a8aaab;
+  background-color: #1a282d;
   border-radius: 25px;
   display: flex;
   align-items: center;
 }
 
+#preSigninHomePageSearchBar:hover {
+  background-color: #33464c;
+}
+
 #preSigninHomePageSearchBarContainer {
   display: flex;
   justify-content: center;
+}
+
+#preSigninLogoText {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#preSigninNavBar {
+  display: flex;
+  justify-content: space-between;
+}
+
+#preSigninGetAppLoginButtonGroup {
+  display: flex;
+  flex-direction: row;
+}
+
+#getAppLoginButtons {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#orangeRoundedShare {
+  background-color: #ff4500;
+  border-radius: 25px;
+  color: white;
+  border-color: none;
+}
+
+#orangeRoundedShare:hover {
+  border-color: none;
+  background-color: #c62828;
 }

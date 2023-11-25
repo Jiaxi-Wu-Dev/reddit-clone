@@ -12,11 +12,6 @@ const style = {
   color: "white",
 };
 
-const blackBackgroundWhiteTetxtStyle = {
-  bgcolor: "#0b1416",
-  color: "white",
-};
-
 function SideNavigationComponent() {
   return (
     <div>
