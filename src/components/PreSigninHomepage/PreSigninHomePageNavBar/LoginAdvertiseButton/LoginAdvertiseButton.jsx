@@ -23,9 +23,9 @@ const style = {
 
 export default function LoginAdvertiseButton() {
   const [anchorEl, setAnchorEl] = React.useState(null);
-  const [open, setOpen] = React.useState(false);
+  const [open2, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+  const handleClose2 = () => setOpen(false);
 
   const open = Boolean(anchorEl);
 
@@ -58,15 +58,14 @@ export default function LoginAdvertiseButton() {
         open={open}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose}>Log In/Sign Up</MenuItem>
+        <MenuItem onClick={(handleClose, handleOpen)}>Log In/Sign Up</MenuItem>
         <MenuItem onClick={handleClose}>Advertise on Reddit</MenuItem>
         <MenuItem onClick={handleClose}>Shop Collectable Avatars</MenuItem>
       </Menu>
       <div>
-        <Button onClick={handleOpen}>Open modal</Button>
         <Modal
-          open={open}
-          onClose={handleClose}
+          open={open2}
+          onClose={handleClose2}
           aria-labelledby="modal-modal-title"
           aria-describedby="modal-modal-description"
         >
