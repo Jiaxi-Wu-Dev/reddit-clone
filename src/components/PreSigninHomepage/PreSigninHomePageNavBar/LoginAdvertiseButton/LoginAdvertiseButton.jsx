@@ -70,8 +70,12 @@ export default function LoginAdvertiseButton() {
         >
           <Box sx={style}>
             <Typography id="modal-modal-title" variant="h6" component="h2">
-              Text in a modal
+              Log in
             </Typography>
+            <h2>
+              By continuing, you agree to our User Agreement and acknowledge
+              that you understand the Privacy Policy.
+            </h2>
           </Box>
         </Modal>
       </div>
