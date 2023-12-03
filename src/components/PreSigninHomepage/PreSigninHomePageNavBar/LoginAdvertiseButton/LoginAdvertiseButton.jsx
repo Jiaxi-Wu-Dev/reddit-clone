@@ -7,6 +7,7 @@ import "./LoginAdvertiseButton.css";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
+import Button from "@mui/material/Button";
 
 const style = {
   position: "absolute",
@@ -76,6 +77,7 @@ export default function LoginAdvertiseButton() {
               By continuing, you agree to our User Agreement and acknowledge
               that you understand the Privacy Policy.
             </h2>
+            <Button></Button>
           </Box>
         </Modal>
       </div>
