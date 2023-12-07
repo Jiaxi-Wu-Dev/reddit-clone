@@ -78,6 +78,7 @@ export default function LoginAdvertiseButton() {
               that you understand the Privacy Policy.
             </h2>
             <Button></Button>
+            <Button></Button>
           </Box>
         </Modal>
       </div>
