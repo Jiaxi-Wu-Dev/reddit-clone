@@ -5,7 +5,7 @@ import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import InputBase from "@mui/material/InputBase";
 import ImageOutlinedIcon from "@mui/icons-material/ImageOutlined";
-
+import LinkOutlinedIcon from "@mui/icons-material/LinkOutlined";
 import "./CreatePostBar.css";
 
 const Search = styled("div")(({ theme }) => ({
